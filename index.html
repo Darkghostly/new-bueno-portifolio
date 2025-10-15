@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gustavo Bueno | Portfólio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <nav class="navbar">
+            <div class="logo">Gustavo Bueno</div>
+            <ul class="nav-links">
+                <li><a href="#">Início</a></li>
+                <li><a href="#projects">Projetos</a></li>
+                <li><a href="#about">Sobre</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#contact">Contato</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="#" class="hero-static">
+            <div class="hero-content">
+                <h1>Desenvolvendo soluções inovadoras para a web.</h1>
+                <p>Sou um desenvolvedor focado em criar experiências digitais eficientes e impactantes. Minha paixão é transformar ideias complexas em realidade através do código.</p>
+                <a href="#projects" class="cta-button">Veja meus projetos</a>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2>Projetos</h2>
+            <div id="scene-container"></div>
+            <div id="tooltip"></div> </section>
+
+        <section id="about">
+            <h2>Sobre Mim</h2>
+            <div class="about-content">
+                <img src="img/generated_image_cinematic_brightened_v2.png" alt="Sua Foto" class="profile-pic">
+                <div class="about-text">
+                    <h3>Minha Missão</h3>
+                    <p>Meu objetivo é utilizar a tecnologia para, proteger e resolver problemas reais, criando produtos que não apenas funcionem bem, mas que também ofereçam uma experiência de usuário memorável.</p>
+                    <h3>Minha História</h3>
+                    <p>Sou um estudante de Análise e Desenvolvimento de Sistemas na FATEC de São José dos Campos. Tenho 19 anos e sou um entusiasta de cybersegurança. Estou sempre em busca de aprender novas habilidades e aprimorar meus conhecimentos.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="blog">
+            <h2>Blog</h2>
+            <div class="blog-posts">
+                <div class="blog-post">
+                    <h3>Em breve</h3>
+                    <p>Em breve... <a href="#">Leia mais</a></p>
+                    <span>21 de Setembro, 2025</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2>Entre em Contato</h2>
+            <p>Tem uma ideia ou um projeto em mente? Vamos conversar!</p>
+            <form id="contact-form" action="https://formspree.io/f/xandrblp" method="POST">
+                <input type="text" name="name" placeholder="Seu Nome" required>
+                <input type="email" name="email" placeholder="Seu E-mail" required>
+                <textarea name="message" placeholder="Sua Mensagem" rows="5" required></textarea>
+                <button type="submit" class="cta-button">Enviar Mensagem</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Gustavo Bueno. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
