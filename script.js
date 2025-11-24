@@ -18,9 +18,9 @@ const cyberProjects = [
     techs: ["JavaScript", "Security", "UI"]
   },
   {
-    name: "OSINT Framework",
-    url: "https://github.com/Darkghostly/OSINT-Framework",
-    description: "Framework de investigação OSINT com coletores e playbooks de inteligência.",
+    name: "OSINT Tools",
+    url: "https://github.com/Darkghostly/OSINT-Tools",
+    description: "hub de ferramentas de investigação OSINT com coletores e playbooks de inteligência.",
     techs: ["OSINT", "Python", "Intelligence"]
   }
 ];
@@ -252,7 +252,7 @@ const initThreeJSAnimation = () => {
     renderer.setSize(container.clientWidth, container.clientHeight);
     renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
     container.appendChild(renderer.domElement);
-    camera.position.z = 400;
+    camera.position.z = 380;
 
     const group = new THREE.Group();
     scene.add(group);
@@ -266,12 +266,12 @@ const initThreeJSAnimation = () => {
     const lineMaterial = new THREE.LineBasicMaterial({ color: 0x222222 });
     
     const particleMaterial = new THREE.PointsMaterial({
-        size: 6,
+        size: 12,
         map: createSquareTexture(),
         transparent: true,
         vertexColors: true,
         depthTest: true,
-        sizeAttenuation: true
+        sizeAttenuation: false
     });
 
     const particlesGeometry = new THREE.BufferGeometry();
@@ -285,7 +285,8 @@ const initThreeJSAnimation = () => {
         const i_float = i + 0.5;
         const phi = Math.acos(1 - 2 * i_float / usedProjects.length);
         const theta = Math.PI * (1 + Math.sqrt(5)) * i_float;
-        const radius = 140;
+        // distribuir os pontos um pouco mais longe do centro
+        const radius = 180;
 
         const x = radius * Math.cos(theta) * Math.sin(phi);
         const y = radius * Math.sin(theta) * Math.sin(phi);
@@ -316,7 +317,7 @@ const initThreeJSAnimation = () => {
     }
     
     const raycaster = new THREE.Raycaster();
-    raycaster.params.Points.threshold = 8;
+    raycaster.params.Points.threshold = 12;
 
     const mouse = new THREE.Vector2();
     let intersected = null;
