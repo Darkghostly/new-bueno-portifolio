@@ -19,9 +19,9 @@ html {
 
 body {
     font-family: var(--font-family);
+    padding-top: 72px;
     color: var(--primary-color);
     line-height: 1.6;
-    overflow-x: hidden;
     background-color: #0d0d0d;
      background-image:
         linear-gradient(rgba(255,255,255,0.02) 1px, transparent 1px),
@@ -32,6 +32,10 @@ body {
         40px 40px,
         40px 40px,
         900px 900px;
+}
+
+body.nav-open {
+    overflow: hidden;
 }
 
 .navbar {
@@ -110,13 +114,17 @@ section h2 {
 }
 
 .hero-content h1 {
+    font-size: clamp(1.8rem, 6vw, 2.5rem);
+}
+
+.hero-content h1 {
     text-shadow: 0 0 8px rgba(0,123,255,0.12);
 }
 
 .hero-content p {
 
 
-    font-size: 1.2rem;
+    font-size   : 1.2rem;
     color: var(--text-color);
     max-width: 700px;
     margin: 0 auto 2rem;
@@ -128,6 +136,18 @@ section h2 {
     max-width: none;
     overflow: visible;
     position: relative;
+}
+
+#project-card {
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.25s ease;
+}
+
+
+#project-card.visible {
+    opacity: 1;
+    pointer-events: auto;
 }
 
 #projects h2{
@@ -146,12 +166,17 @@ section h2 {
     cursor: pointer;
 }
 
+
+
 @media screen and (max-width: 1200px) {
     #scene-container { height: 75vh; min-height: 520px; }
 }
 
-@media screen and (max-width: 768px) {
-    #scene-container { height: 60vh; min-height: 320px; }
+@media (max-width: 768px) {
+    #scene-container {
+        height: 55vh;
+        min-height: 300px;
+    }
 }
 
 #tooltip {

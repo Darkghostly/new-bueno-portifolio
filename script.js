@@ -33,6 +33,7 @@ const navSlide = () => {
     burger.addEventListener('click', () => {
         nav.classList.toggle('nav-active');
         burger.classList.toggle('toggle');
+        document.body.classList.remove('nav-open');
     });
     navLinks.forEach(link => {
         link.addEventListener('click', () => {
