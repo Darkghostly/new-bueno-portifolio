@@ -3,13 +3,13 @@ const cyberProjects = [
     name: "AES-Cryptography",
     url: "https://github.com/Darkghostly/AES-criptografy",
     description: "Implementação prática de criptografia simétrica AES com foco em integridade e confidencialidade.",
-    techs: ["JavaScript", "Cryptography", "AES"]
+    techs: ["JavaScript", "Cryptography", "Python"]
   },
   {
     name: "RSA Encryptor",
     url: "https://github.com/Darkghostly/Encriptador-RSA",
     description: "Geração de chaves e criptografia usando RSA — demonstra conhecimento em criptografia assimétrica.",
-    techs: ["JavaScript", "RSA", "Math Crypto"]
+    techs: ["JavaScript", "RSA", "Python"]
   },
   {
     name: "Gerador de Senhas",
@@ -22,6 +22,12 @@ const cyberProjects = [
     url: "https://github.com/Darkghostly/OSINT-Tools",
     description: "hub de ferramentas de investigação OSINT com coletores e playbooks de inteligência.",
     techs: ["OSINT", "Python", "Intelligence"]
+  },
+  {
+    name: "Guardlog",
+    url: "https://github.com/Darkghostly/GuardLog",
+    description: "Sistema de monitoramento de logs em tempo real para detecção de atividades suspeitas.",
+    techs: ["Python", "Logging", "Security"]
   }
 ];
 
