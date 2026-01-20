@@ -144,6 +144,24 @@ section h2 {
     transition: opacity 0.25s ease;
 }
 
+#card-image {
+  width: 100%;
+  height: auto;
+  margin-bottom: 12px;
+  border-radius: 10px;
+  display: none;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.45);
+  border: 1px solid rgba(255,255,255,0.06);
+}
+
+h4 {
+    text-align: center;
+    font-size: 1rem;
+    margin-top: -25px;
+    margin-bottom: 5px;
+    color: var(--text-color);
+    font-weight: 500;
+}
 
 #project-card.visible {
     opacity: 1;
