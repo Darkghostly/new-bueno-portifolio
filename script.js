@@ -38,6 +38,14 @@ const cyberProjects = [
     techs: ["Python", "Logging", "Security"],
     image: "img/GuardLog.png",
   },
+  {
+    name: "File Integrity Checker",
+    url: "https://github.com/Darkghostly/file-integrity-checker",
+    description:
+      "Script em bash para verificação de integridade de arquivos.",
+    techs: ["Bash", "Blue-Team", "Linux"],
+    image: "img/File Integrity Checker.png",
+  },
 ];
 
 const navSlide = () => {
