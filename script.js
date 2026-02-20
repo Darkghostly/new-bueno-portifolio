@@ -46,6 +46,14 @@ const cyberProjects = [
     techs: ["Bash", "Blue-Team", "Linux"],
     image: "img/File Integrity Checker.png",
   },
+  {
+    name: "RO - TEC",
+    url: "https://github.com/Darkghostly/Checklist-BBLK",
+    description:
+      "Checklist projetado para igrejas, com o objetivo de garantir que nada seja esquecido.",
+    techs: ["PWA", "Firebase", "JavaScript"],
+    image: "img/RO-TEC.png",
+  },
 ];
 
 const navSlide = () => {
